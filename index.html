@@ -15,14 +15,23 @@
   </head>
 
   <body>
+    <h1>Unit Converter</h1>
     <main>
-      <h1>Unit Converter</h1>
-
       <div>
         <label for="degC" class="screen-reader-text">°C</label>
-        <input type="number" id="degC" placeholder="°C" />
+        <input
+          type="number"
+          id="degC"
+          placeholder="°C"
+          data-conversion="toFahrenheit"
+        />
         <label for="degF" class="screen-reader-text">°F</label>
-        <input type="number" id="degF" placeholder="°F" />
+        <input
+          type="number"
+          id="degF"
+          placeholder="°F"
+          data-conversion="toCelsius"
+        />
       </div>
     </main>
     <script src="./scripts.js" type="module"></script>

@@ -8,7 +8,7 @@ const inputs = document.querySelectorAll("input");
 
 inputs.forEach((input) => {
   input.addEventListener("input", function handleKeyUp() {
-    if (this.id === "degF") {
+    if (this.dataset.conversion === "toCelsius") {
       inputs[0].value = convert(this.value, "toCelsius");
     } else {
       inputs[1].value = convert(this.value, "toFahrenheit");
